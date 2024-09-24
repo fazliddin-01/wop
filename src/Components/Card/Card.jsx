@@ -219,6 +219,7 @@ const Card = () => {
         </div>
 
         </div>
+        {/* Yengi */}
     </>
   )
 }
