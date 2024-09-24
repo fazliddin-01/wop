@@ -1,0 +1,178 @@
+.bosh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background-color: black;
+    color: white;
+    padding: 12px;
+
+    @include media(820) {
+        font-size: 15px;
+    }
+
+    @include media(720) {
+        font-size: 13px;
+    }
+
+    @include media(520) {
+        display: none;
+    }
+}
+
+.nav_box {
+    padding-top: 47px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+
+    @include media(1220) {
+        padding: 25px;
+        align-items: center;
+        width: 1100px;
+        justify-content: space-between;
+    }
+
+    @include media(1055) {
+        padding: 20px;
+        width: 1000px;
+        justify-content: space-between;
+    }
+
+    @include media(950) {
+        padding: 15px;
+        width: 900px;
+        justify-content: space-between;
+    }
+
+    @include media(850) {
+        padding: 10px;
+        width: 800px;
+        justify-content: space-between;
+    }
+
+    @include media(750) {
+        padding: 8px;
+        width: 700px;
+        justify-content: space-between;
+    }
+
+    @include media(650) {
+        justify-content: center;
+        width: 600px;
+    }
+
+    @include media(590) {
+        justify-content: center;
+        width: 500px;
+    }
+
+    @include media(490) {
+        justify-content: center;
+        width: 400px;
+    }
+
+    @include media(390) {
+        justify-content: center;
+        width: 300px;
+    }
+
+    @include media(290) {
+        justify-content: center;
+        width: 200px;
+    }
+
+    &_child {
+        &_title {
+            @include media(750) {
+                font-size: 16px;
+                padding-left: 150px;
+            }
+        }
+    }
+
+    &_child-2 {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        &_title {
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: black;
+
+            @include media(1220) {
+                font-size: 14px;
+            }
+
+            @include media(1000) {
+                font-size: 11px;
+            }
+
+            @include media(650) {
+                display: none;
+            }
+        }
+    }
+
+    &_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        @include media(1220) {
+            width: 500px;
+            padding: 30px;
+            gap: 21px;
+        }
+
+        @include media(1055) {
+            padding: 20px;
+            gap: 19px;
+        }
+
+        @include media(950) {
+            padding: 15px;
+            gap: 17px;
+        }
+
+        @include media(820) {
+            padding: 10px;
+            gap: 15px;
+        }
+
+        @include media(650) {
+            display: none;
+        }
+
+        &_input {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            background-color: #F5F5F5;
+            padding: 7px 12px;
+            border-radius: 4px;
+            border: none;
+
+            @include media(820) {
+                gap: 25px;
+                padding: 6px 10px;
+            }
+
+            @include media(720) {
+                gap: 20px;
+                padding: 10px
+            }
+        }
+
+        &_like {
+            display: flex;
+            gap: 16px;
+        }
+    }
+}
